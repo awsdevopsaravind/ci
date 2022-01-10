@@ -12,9 +12,7 @@ pipeline {
                 // Get some code from a GitHub repository
                 git 'https://github.com/awsdevopsaravind/ci.git'
                 echo 'github repo cloned'
-            }
-
-            
+            } 
         }
         stage('Build') {
             steps {
@@ -22,14 +20,11 @@ pipeline {
                 sh "mvn clean test"
 		echo 'build completed'
             }
+	}
 	stage('new') {
             steps {
 		echo 'pipeline completed'
             }
-
-            
-        }
-            
         }
     }
 }
