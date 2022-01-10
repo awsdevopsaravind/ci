@@ -21,11 +21,14 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh "mvn clean test"
 		echo 'build completed'
-
-                // To run Maven on a Windows agent, use
-                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+	stage('new') {
+            steps {
+		echo 'pipeline completed'
             }
 
+            
+        }
             
         }
     }
