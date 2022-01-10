@@ -1,4 +1,4 @@
-@Library("shared-library") _   // Load the util shared library
+@Library("shared-library@1.0") _   // Load the util shared library
 
 javapipeline([
     skipDocker: false,
