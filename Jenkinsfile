@@ -2,6 +2,5 @@
 
 javaPipeline([
     skipDocker: false,
-    personName: "Aravind",
-    greetings: ["morning", "afternoon"]
+    personName: "Aravind"
 ])
