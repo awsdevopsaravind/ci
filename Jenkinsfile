@@ -1,6 +1,6 @@
-@Library("shared-library@1.0") _   // Load the util shared library
+@Library("shared-library1") _   // Load the util shared library
 
-javapipeline([
+javaPipeline([
     skipDocker: false,
     personName: "Aravind",
     greetings: ["morning", "afternoon"]
