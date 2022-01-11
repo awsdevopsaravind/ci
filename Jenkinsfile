@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Cloning Github') {
             steps {
-                // Get some code from a GitHub repository
+                
                 git 'https://github.com/awsdevopsaravind/ci.git'
                 echo 'github repo cloned'
             }
